@@ -1,17 +1,15 @@
 package routers
 
 import (
+	"EasyDarwin/models"
+	rtsp "EasyDarwin/rtsp"
 	"fmt"
+	"github.com/MeloQi/EasyGoLib/db"
+	"github.com/gin-gonic/gin"
 	"log"
 	"net/http"
 	"strings"
 	"time"
-
-	"github.com/EasyDarwin/EasyDarwin/models"
-	"github.com/penggy/EasyGoLib/db"
-
-	"github.com/EasyDarwin/EasyDarwin/rtsp"
-	"github.com/gin-gonic/gin"
 )
 
 /**

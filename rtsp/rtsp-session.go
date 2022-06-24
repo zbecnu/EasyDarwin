@@ -1,6 +1,7 @@
 package rtsp
 
 import (
+	"EasyDarwin/models"
 	"bufio"
 	"bytes"
 	"crypto/md5"
@@ -17,9 +18,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/EasyDarwin/EasyDarwin/models"
-	"github.com/penggy/EasyGoLib/db"
-	"github.com/penggy/EasyGoLib/utils"
+	"github.com/MeloQi/EasyGoLib/db"
+	"github.com/MeloQi/EasyGoLib/utils"
 
 	"github.com/teris-io/shortid"
 )

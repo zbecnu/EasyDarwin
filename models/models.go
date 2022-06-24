@@ -1,8 +1,8 @@
 package models
 
 import (
-	"github.com/penggy/EasyGoLib/db"
-	"github.com/penggy/EasyGoLib/utils"
+	"github.com/MeloQi/EasyGoLib/db"
+	"github.com/MeloQi/EasyGoLib/utils"
 )
 
 func Init() (err error) {
@@ -12,6 +12,7 @@ func Init() (err error) {
 	}
 	db.SQLite.AutoMigrate(User{}, Stream{})
 	count := 0
+
 	sec := utils.Conf().Section("http")
 	defUser := sec.Key("default_username").MustString("admin")
 	defPass := sec.Key("default_password").MustString("admin")
